@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', cursive;
+    height: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: auto repeat(11, 1fr);
+}
+
+
+.container > div > a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    color: rgb(255, 255, 255);
+    margin: 15px;
+    padding: 15px;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.logo-nav {
+    grid-column: 1 / 10;
+    grid-row: 1;
+    font-size: 25px;   
+}
+
+.about-nav {
+    grid-column: 12 / 16;
+    justify-self: center;
+    grid-row: 1;   
+    color: black;
+}
+
+.sitemap-nav {
+    grid-column: 15 / 17;
+    justify-self: center;
+    grid-row: 1;
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+    border-right: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.privacy-nav {
+    grid-column: 16 / 20;
+    justify-self: center;
+    grid-row: 1;
+}
+
+.contact-nav {
+    grid-column: 20 / 24;
+    grid-row: 1;
+    background-color: whitesmoke;
+    color: black;
+    justify-self: center;
+    align-self: center;
+    font-size: 20px;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.contact-nav:hover {
+    background-color: rgb(64, 129, 226);
+    color: rgb(255, 255, 255);
+}
+
+
+.background-image {
+    grid-column: 1 / -1;   
+    grid-row: 1 / -1;
+}
+
+.background-image > img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.ranked {
+    grid-column: 3 / -1;
+    grid-row: 6 / 8;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    font-size: 55px;;
+}
+
+.training {
+    grid-column: 3 / -1;
+    grid-row: 7 / 9;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    font-size: 55px;
+}
+
+.jakarta {
+    grid-column: 3 / -1;
+    grid-row: 8 / 10;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    font-size: 55px;
+}
+
+.privacy-btn {
+    grid-column: 3 / 7;
+    grid-row: 10;
+    background-color: #9FC5F8;
+    color: black;
+    justify-self: center;
+    align-self: center;
+    font-size: 20px;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+    padding: 15px 20px;
+}
+
+.privacy-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.contact-btn {
+    grid-column: 7 / 11;
+    grid-row: 10;
+    background-color: #B6D7A8;
+    color: black;
+    justify-self: center;
+    align-self: center;
+    font-size: 20px;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+    padding: 15px 20px;
+}
+
+.contact-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.flexbox-middle {
+    display: flex;
+    justify-content: space-around;
+    font-size: 45px;
+    margin-top: 30px;
+}
+
+.flexbox-middle > p {
+    font-size: 15px;
+}
